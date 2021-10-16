@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 50, 75, 1 )
+flag_disable_z = true
+spread = 5.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 1401.68
+initial_velocity_random = 1.0
+angular_velocity = -316.98
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 25.0
+hue_variation = -0.28
+hue_variation_random = 0.21
+
+[node name="OffscreanEffect" type="Particles2D"]
+emitting = false
+amount = 200
+one_shot = true
+visibility_rect = Rect2( -25, -100, 1500, 200 )
+process_material = SubResource( 1 )
